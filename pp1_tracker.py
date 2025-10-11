@@ -2,6 +2,7 @@ import asyncio
 import aiohttp
 from bs4 import BeautifulSoup
 import requests
+import os
 
 # Discord Webhook URL
 DISCORD_WEBHOOK_URL = os.getenv("DISCORD_WEBHOOK_URL")
@@ -140,6 +141,7 @@ async def main_once():
             display_all_teams(all_team_data)
 # --- Run once and exit ---
 asyncio.run(main_once())
+
 
 
 
