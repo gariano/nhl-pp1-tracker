@@ -117,7 +117,6 @@ def display_all_teams(data):
 # --- Main async loop ---
 async def main_once():
     async with aiohttp.ClientSession() as session:
-        while True:
             tasks = [fetch_team(session, team_name, team_path) for team_name, team_path in teams.items()]
             results = await asyncio.gather(*tasks)
 
@@ -138,9 +137,8 @@ async def main_once():
                 all_team_data[team_name] = {"line1": line1_players, "pp1": pp1_players}
 
             display_all_teams(all_team_data)
-            await asyncio.sleep(POLL_INTERVAL)
-
 # --- Run once and exit ---
 asyncio.run(main_once())
+
 
 
