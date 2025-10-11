@@ -140,5 +140,6 @@ async def main_loop():
             display_all_teams(all_team_data)
             await asyncio.sleep(POLL_INTERVAL)
 
-# --- Run ---
-asyncio.run(main_loop())
+# --- Run once and exit ---
+asyncio.run(main_once())
+
