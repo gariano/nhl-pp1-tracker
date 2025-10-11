@@ -4,7 +4,8 @@ from bs4 import BeautifulSoup
 import requests
 
 # Discord Webhook URL
-DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1425577584955232468/maRYwPZb_U-lKKgnb31hV-z2t2xgtGhKHdGBEQztdaFu0dkle0HcFk7msLchWXk_93TI"
+DISCORD_WEBHOOK_URL = os.getenv("DISCORD_WEBHOOK_URL")
+
 
 # --- Config ---
 POLL_INTERVAL = 3600  # 60 minutes
@@ -139,6 +140,7 @@ async def main_once():
             display_all_teams(all_team_data)
 # --- Run once and exit ---
 asyncio.run(main_once())
+
 
 
 
