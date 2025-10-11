@@ -115,7 +115,7 @@ def display_all_teams(data):
     print("="*80)
 
 # --- Main async loop ---
-async def main_loop():
+async def main_once():
     async with aiohttp.ClientSession() as session:
         while True:
             tasks = [fetch_team(session, team_name, team_path) for team_name, team_path in teams.items()]
@@ -142,4 +142,5 @@ async def main_loop():
 
 # --- Run once and exit ---
 asyncio.run(main_once())
+
 
