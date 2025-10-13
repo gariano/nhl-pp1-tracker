@@ -1,16 +1,23 @@
 name: NHL PP1 Tracker
 
+# Allow this workflow to write back to the repo
+permissions:
+  contents: write
+
 on:
   schedule:
-    - cron: "*/10 * * * *"  # runs every 10 minutes
-  workflow_dispatch:        # allows manual run
+    - cron: "*/10 * * * *"  # every 10 minutes
+  workflow_dispatch:        # allows manual trigger
 
 jobs:
   run-tracker:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repo
+      - name: Checkout repo (persist credentials)
         uses: actions/checkout@v4
+        with:
+          persist-credentials: true  # allows pushing with GITHUB_TOKEN
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -22,6 +29,27 @@ jobs:
           python -m pip install --upgrade pip
           pip install aiohttp beautifulsoup4 lxml requests
 
-      - name: Run PP1 Tracker
+      - name: Run PP1 tracker
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
         run: |
           python pp1_tracker.py
+
+      - name: Commit and push changes (if any)
+        run: |
+          # configure git user
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # show status for debugging
+          git status --porcelain
+
+          # if changes exist, add/commit/push
+          if [ -n "$(git status --porcelain)" ]; then
+            git add previous_pp1.json
+            git commit -m "Update previous_pp1 (auto) [ci skip]"
+            git push
+          else
+            echo "No changes to commit."
+          fi
+
