@@ -149,7 +149,7 @@ def display_all_teams(data):
 async def main_once():
     previous = load_previous()  # dict: team -> list of players
     async with aiohttp.ClientSession() as session:
-tasks = [fetch_team(session, team, path) for team, path in teams.items()]
+        tasks = [fetch_team(session, team, path) for team, path in teams.items()]
         results = await asyncio.gather(*tasks)
 
     all_team_data = {}
@@ -183,6 +183,7 @@ if __name__ == "__main__":
     except asyncio.TimeoutError:
         print("Script timed out.")
     print("Done.")
+
 
 
 
