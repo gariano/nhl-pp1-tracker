@@ -1,0 +1,226 @@
+{
+  "Anaheim Ducks": [
+    "Chris Kreider",
+    "Leo Carlsson",
+    "Troy Terry",
+    "Jackson Lacombe",
+    "Mikael Granlund"
+  ],
+  "Utah Mammoth": [
+    "Dylan Guenther",
+    "Logan Cooley",
+    "Nick Schmaltz",
+    "Mikhail Sergachev",
+    "Clayton Keller"
+  ],
+  "Boston Bruins": [
+    "Morgan Geekie",
+    "Elias Lindholm",
+    "Pavel Zacha",
+    "David Pastrnak",
+    "Charlie McAvoy"
+  ],
+  "Buffalo Sabres": [
+    "Alex Tuch",
+    "Ryan McLeod",
+    "Jason Zucker",
+    "Tage Thompson",
+    "Rasmus Dahlin"
+  ],
+  "Calgary Flames": [
+    "Joel Farabee",
+    "Morgan Frost",
+    "Nazem Kadri",
+    "Matt Coronato",
+    "MacKenzie Weegar"
+  ],
+  "Carolina Hurricanes": [
+    "Andrei Svechnikov",
+    "Sebastian Aho",
+    "Nikolaj Ehlers",
+    "Seth Jarvis",
+    "Shayne Gostisbehere"
+  ],
+  "Chicago Blackhawks": [
+    "Tyler Bertuzzi",
+    "Frank Nazar",
+    "Teuvo Teravainen",
+    "Connor Bedard",
+    "Sam Rinzel"
+  ],
+  "Colorado Avalanche": [
+    "Artturi Lehkonen",
+    "Brock Nelson",
+    "Martin Necas",
+    "Nathan MacKinnon",
+    "Cale Makar"
+  ],
+  "Columbus Blue Jackets": [
+    "Boone Jenner",
+    "Sean Monahan",
+    "Kent Johnson",
+    "Kirill Marchenko",
+    "Zach Werenski"
+  ],
+  "Dallas Stars": [
+    "Jason Robertson",
+    "Roope Hintz",
+    "Mikko Rantanen",
+    "Wyatt Johnston",
+    "Miro Heiskanen"
+  ],
+  "Detroit Red Wings": [
+    "Alex DeBrincat",
+    "Dylan Larkin",
+    "Patrick Kane",
+    "Lucas Raymond",
+    "Moritz Seider"
+  ],
+  "Edmonton Oilers": [
+    "David Tomasek",
+    "Ryan Nugent-Hopkins",
+    "Leon Draisaitl",
+    "Connor McDavid",
+    "Evan Bouchard"
+  ],
+  "Florida Panthers": [
+    "Sam Reinhart",
+    "Sam Bennett",
+    "Brad Marchand",
+    "Seth Jones",
+    "Aaron Ekblad"
+  ],
+  "Los Angeles Kings": [
+    "Andrei Kuzmenko",
+    "Anze Kopitar",
+    "Quinton Byfield",
+    "Kevin Fiala",
+    "Adrian Kempe"
+  ],
+  "Minnesota Wild": [
+    "Matt Boldy",
+    "Joel Eriksson Ek",
+    "Vladimir Tarasenko",
+    "Zeev Buium",
+    "Kirill Kaprizov"
+  ],
+  "Montreal Canadiens": [
+    "Juraj Slafkovsky",
+    "Nick Suzuki",
+    "Zack Bolduc",
+    "Cole Caufield",
+    "Lane Hutson"
+  ],
+  "Nashville Predators": [
+    "Filip Forsberg",
+    "Ryan O'Reilly",
+    "Jonathan Marchessault",
+    "Steven Stamkos",
+    "Roman Josi"
+  ],
+  "New Jersey Devils": [
+    "Dawson Mercer",
+    "Nico Hischier",
+    "Jesper Bratt",
+    "Luke Hughes",
+    "Jack Hughes"
+  ],
+  "New York Islanders": [
+    "Kyle Palmieri",
+    "Bo Horvat",
+    "Anthony Duclair",
+    "Mathew Barzal",
+    "Matthew Schaefer"
+  ],
+  "New York Rangers": [
+    "Alexis Lafrenière",
+    "J.T. Miller",
+    "Artemi Panarin",
+    "Mika Zibanejad",
+    "Adam Fox"
+  ],
+  "Ottawa Senators": [
+    "Brady Tkachuk",
+    "Tim Stützle",
+    "Shane Pinto",
+    "Dylan Cozens",
+    "Jake Sanderson"
+  ],
+  "Philadelphia Flyers": [
+    "Travis Konecny",
+    "Trevor Zegras",
+    "Matvei Michkov",
+    "Owen Tippett",
+    "Jamie Drysdale"
+  ],
+  "Pittsburgh Penguins": [
+    "Rickard Rakell",
+    "Evgeni Malkin",
+    "Bryan Rust",
+    "Erik Karlsson",
+    "Sidney Crosby"
+  ],
+  "San Jose Sharks": [
+    "William Eklund",
+    "Will Smith",
+    "Tyler Toffoli",
+    "John Klingberg",
+    "Macklin Celebrini"
+  ],
+  "Seattle Kraken": [
+    "Jordan Eberle",
+    "Chandler Stephenson",
+    "Matty Beniers",
+    "Vince Dunn",
+    "Jared McCann"
+  ],
+  "St. Louis Blues": [
+    "Robert Thomas",
+    "Brayden Schenn",
+    "Pavel Buchnevich",
+    "Jimmy Snuggerud",
+    "Cam Fowler"
+  ],
+  "Tampa Bay Lightning": [
+    "Jake Guentzel",
+    "Brayden Point",
+    "Nikita Kucherov",
+    "Oliver Bjorkstrand",
+    "Victor Hedman"
+  ],
+  "Toronto Maple Leafs": [
+    "Matthew Knies",
+    "John Tavares",
+    "William Nylander",
+    "Morgan Rielly",
+    "Auston Matthews"
+  ],
+  "Vancouver Canucks": [
+    "Jake DeBrusk",
+    "Elias Pettersson",
+    "Brock Boeser",
+    "Evander Kane",
+    "Quinn Hughes"
+  ],
+  "Vegas Golden Knights": [
+    "Mark Stone",
+    "Tomas Hertl",
+    "Pavel Dorofeyev",
+    "Jack Eichel",
+    "Mitch Marner"
+  ],
+  "Washington Capitals": [
+    "Tom Wilson",
+    "Dylan Strome",
+    "Pierre-Luc Dubois",
+    "Alex Ovechkin",
+    "John Carlson"
+  ],
+  "Winnipeg Jets": [
+    "Gabriel Vilardi",
+    "Mark Scheifele",
+    "Alex Iafallo",
+    "Josh Morrissey",
+    "Kyle Connor"
+  ]
+}
