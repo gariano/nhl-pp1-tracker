@@ -3,13 +3,10 @@ import aiohttp
 from bs4 import BeautifulSoup
 import requests
 import os
+import json
 
 # Discord Webhook URL
 DISCORD_WEBHOOK_URL = os.getenv("DISCORD_WEBHOOK_URL")
-
-
-# --- Config ---
-POLL_INTERVAL = 3600  # 60 minutes
 
 # NHL teams (with Utah Mammoth replacement)
 teams = {
@@ -53,29 +50,51 @@ HEADERS = {
                   "AppleWebKit/537.36 (KHTML, like Gecko) "
                   "Chrome/114.0.0.0 Safari/537.36"
 }
+PREV_FILE = "previous_pp1.json"
 
-previous_pp1 = {}  # track old PP1 for change detection
+# --- Helpers to persist previous_pp1 between runs --- #
+def load_previous():
+    if os.path.exists(PREV_FILE):
+        try:
+            with open(PREV_FILE, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception:
+            return {}
+    return {}
 
-# --- Async fetch ---
+def save_previous(prev_dict):
+    # atomic-ish write
+    tmp = PREV_FILE + ".tmp"
+    with open(tmp, "w", encoding="utf-8") as f:
+        json.dump(prev_dict, f, ensure_ascii=False, indent=2)
+    os.replace(tmp, PREV_FILE)
+
+# --- Scraping / parsing --- #
 async def fetch_team(session, team_name, team_path):
     url = BASE_URL.format(team=team_path)
     try:
-        async with session.get(url, headers=HEADERS) as response:
+        timeout = aiohttp.ClientTimeout(total=30)
+        async with session.get(url, headers=HEADERS, timeout=timeout) as response:
             if response.status != 200:
+                print(f"{team_name}: HTTP {response.status}")
                 return team_name, None
             text = await response.text()
             return team_name, BeautifulSoup(text, "lxml")
-    except:
+    except asyncio.TimeoutError:
+        print(f"{team_name}: ❌ Timeout")
+        return team_name, None
+    except Exception as e:
+        print(f"{team_name} ERROR: {e}")
         return team_name, None
 
 def extract_section_players(soup, header_text, num_players=None):
+    if not soup:
+        return []
     header = soup.find(string=lambda t: t and header_text.lower() in t.lower())
     if not header:
         return []
-
     section = header.find_parent("div")
     name_spans = section.find_all_next("span", class_="text-xs font-bold uppercase xl:text-base")
-
     players = []
     for span in name_spans:
         text = span.get_text(strip=True)
@@ -88,6 +107,8 @@ def extract_section_players(soup, header_text, num_players=None):
     return players
 
 def extract_first_forward_line(soup):
+    if not soup:
+        return []
     forward_section = soup.find("span", string="Forwards")
     if not forward_section:
         return []
@@ -98,15 +119,22 @@ def extract_first_forward_line(soup):
     return all_forward_names[:3]
 
 def send_discord_notification(team, new_players, old_players):
-    content = f"**PP1 Update for {team}**\n"
+    if not DISCORD_WEBHOOK_URL:
+        print("Discord webhook not configured; skipping notification.")
+        return
     added = [p for p in new_players if p not in old_players]
     removed = [p for p in old_players if p not in new_players]
+    if not added and not removed:
+        return
+    content = f"**PP1 Update for {team}**\n"
     if added:
         content += f"Added: {', '.join(added)}\n"
     if removed:
-        content += f"Removed: {', '.join(removed)}\n"
-
-    requests.post(DISCORD_WEBHOOK_URL, json={"content": content})
+        content += f"Removed: {', '.join(removed)}"
+    try:
+        requests.post(DISCORD_WEBHOOK_URL, json={"content": content}, timeout=10)
+    except Exception as e:
+        print("Failed to send Discord webhook:", e)
 
 def display_all_teams(data):
     print("\n" + "="*80)
@@ -116,31 +144,46 @@ def display_all_teams(data):
         print(f"{team} | Line 1: {line1} | PP1: {pp1}")
     print("="*80)
 
-# --- Main async loop ---
+
+# --- Main single-run function (for GitHub Actions) --- #
 async def main_once():
+    previous = load_previous()  # dict: team -> list of players
     async with aiohttp.ClientSession() as session:
-            tasks = [fetch_team(session, team_name, team_path) for team_name, team_path in teams.items()]
-            results = await asyncio.gather(*tasks)
+        tasks = [fetch_team(session, team, path) for team, path in POLL_TEAMS.items()]
+        results = await asyncio.gather(*tasks)
 
-            all_team_data = {}
+    all_team_data = {}
+    updated_prev = dict(previous)  # copy to update
 
-            for team_name, soup in results:
-                if not soup:
-                    continue
+    for team_name, soup in results:
+        if not soup:
+            # leave previous as-is
+            continue
 
-                line1_players = extract_first_forward_line(soup)
-                pp1_players = extract_section_players(soup, "1st Powerplay Unit", num_players=5)
+        line1_players = extract_first_forward_line(soup)
+        pp1_players = extract_section_players(soup, "1st Powerplay Unit", num_players=5)
 
-                old_pp1 = previous_pp1.get(team_name, [])
-                if pp1_players != old_pp1 and old_pp1:
-                    send_discord_notification(team_name, pp1_players, old_pp1)
-                previous_pp1[team_name] = pp1_players
+        old_pp1 = previous.get(team_name, [])
+        if pp1_players != old_pp1 and old_pp1:
+            send_discord_notification(team_name, pp1_players, old_pp1)
 
-                all_team_data[team_name] = {"line1": line1_players, "pp1": pp1_players}
+        updated_prev[team_name] = pp1_players
+        all_team_data[team_name] = {"line1": line1_players, "pp1": pp1_players}
 
-            display_all_teams(all_team_data)
-# --- Run once and exit ---
-asyncio.run(main_once())
+    display_all_teams(all_team_data)
+
+    # save updated previous_pp1.json ALWAYS (so the runner can commit it back)
+    save_previous(updated_prev)
+    print("Saved updated previous_pp1.json")
+
+if __name__ == "__main__":
+    print("Starting single-run PP1 tracker...")
+    try:
+        asyncio.run(asyncio.wait_for(main_once(), timeout=120))
+    except asyncio.TimeoutError:
+        print("Script timed out.")
+    print("Done.")
+
 
 
 
