@@ -126,7 +126,7 @@ def send_discord_notification(team, new_players, old_players):
     removed = [p for p in old_players if p not in new_players]
     if not added and not removed:
         return
-    content = f"**PP1 Update for {team}**\n"
+    content = f"**PP1 Update for {team}** @seang37 \n"
     if added:
         content += f"Added: {', '.join(added)}\n"
     if removed:
@@ -183,6 +183,7 @@ if __name__ == "__main__":
     except asyncio.TimeoutError:
         print("Script timed out.")
     print("Done.")
+
 
 
 
