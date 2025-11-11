@@ -28,10 +28,10 @@
     "Tage Thompson"
   ],
   "Calgary Flames": [
-    "Jonathan Huberdeau",
-    "Nazem Kadri",
-    "Matt Coronato",
     "Morgan Frost",
+    "Nazem Kadri",
+    "Jonathan Huberdeau",
+    "Matt Coronato",
     "MacKenzie Weegar"
   ],
   "Carolina Hurricanes": [
@@ -93,7 +93,7 @@
   "Los Angeles Kings": [
     "Corey Perry",
     "Anze Kopitar",
-    "Quinton Byfield",
+    "Andrei Kuzmenko",
     "Kevin Fiala",
     "Adrian Kempe"
   ],
@@ -135,8 +135,8 @@
   "New York Rangers": [
     "Will Cuylle",
     "J.T. Miller",
-    "Artemi Panarin",
     "Mika Zibanejad",
+    "Artemi Panarin",
     "Adam Fox"
   ],
   "Ottawa Senators": [
@@ -161,8 +161,8 @@
     "Sidney Crosby"
   ],
   "San Jose Sharks": [
+    "William Eklund",
     "Will Smith",
-    "Alexander Wennberg",
     "Tyler Toffoli",
     "John Klingberg",
     "Macklin Celebrini"
