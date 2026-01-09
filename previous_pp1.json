@@ -37,8 +37,8 @@
   "Carolina Hurricanes": [
     "Andrei Svechnikov",
     "Sebastian Aho",
+    "Jordan Staal",
     "Seth Jarvis",
-    "Nikolaj Ehlers",
     "Shayne Gostisbehere"
   ],
   "Chicago Blackhawks": [
@@ -56,9 +56,9 @@
     "Cale Makar"
   ],
   "Columbus Blue Jackets": [
-    "Dmitri Voronkov",
-    "Adam Fantilli",
     "Charlie Coyle",
+    "Sean Monahan",
+    "Kent Johnson",
     "Kirill Marchenko",
     "Zach Werenski"
   ],
@@ -119,7 +119,7 @@
     "Roman Josi"
   ],
   "New Jersey Devils": [
-    "Stefan Noesen",
+    "Timo Meier",
     "Nico Hischier",
     "Jesper Bratt",
     "Luke Hughes",
@@ -142,7 +142,7 @@
   "Ottawa Senators": [
     "Brady Tkachuk",
     "Tim Stützle",
-    "Dylan Cozens",
+    "Shane Pinto",
     "Jake Sanderson",
     "Drake Batherson"
   ],
@@ -170,9 +170,9 @@
   "Seattle Kraken": [
     "Chandler Stephenson",
     "Matty Beniers",
-    "Jared McCann",
+    "Frederick Gaudreau",
     "Vince Dunn",
-    "Eeli Tolvanen"
+    "Jared McCann"
   ],
   "St. Louis Blues": [
     "Pavel Buchnevich",
