@@ -1,7 +1,7 @@
 {
   "Anaheim Ducks": [
     "Chris Kreider",
-    "Leo Carlsson",
+    "Ryan Poehling",
     "Beckett Sennecke",
     "Cutter Gauthier",
     "Jackson Lacombe"
@@ -23,7 +23,7 @@
   "Buffalo Sabres": [
     "Jason Zucker",
     "Josh Norris",
-    "Josh Doan",
+    "Jack Quinn",
     "Tage Thompson",
     "Rasmus Dahlin"
   ],
@@ -49,8 +49,8 @@
     "Sam Rinzel"
   ],
   "Colorado Avalanche": [
-    "Artturi Lehkonen",
     "Brock Nelson",
+    "Nathan MacKinnon",
     "Gabriel Landeskog",
     "Martin Necas",
     "Cale Makar"
@@ -84,11 +84,11 @@
     "Evan Bouchard"
   ],
   "Florida Panthers": [
-    "Sam Reinhart",
+    "Brad Marchand",
     "Sam Bennett",
-    "Matthew Tkachuk",
+    "Sam Reinhart",
     "Uvis Balinskis",
-    "Anton Lundell"
+    "Matthew Tkachuk"
   ],
   "Los Angeles Kings": [
     "Corey Perry",
@@ -210,7 +210,7 @@
     "Rasmus Andersson"
   ],
   "Washington Capitals": [
-    "Pierre-Luc Dubois",
+    "Justin Sourdif",
     "Dylan Strome",
     "Ryan Leonard",
     "Alex Ovechkin",
