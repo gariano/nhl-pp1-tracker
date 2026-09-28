@@ -14,9 +14,9 @@
     "Mikhail Sergachev"
   ],
   "Boston Bruins": [
-    "JJ Peterka",
     "Morgan Geekie",
     "Pavel Zacha",
+    "JJ Peterka",
     "David Pastrnak",
     "Hampus Lindholm"
   ],
@@ -87,7 +87,7 @@
     "Brady Tkachuk",
     "Aleksander Barkov",
     "Sam Reinhart",
-    "Aaron Ekblad",
+    "Seth Jones",
     "Matthew Tkachuk"
   ],
   "Los Angeles Kings": [
@@ -140,11 +140,11 @@
     "Adam Fox"
   ],
   "Ottawa Senators": [
-    "Drake Batherson",
+    "William Eklund",
     "Tim Stützle",
     "Dylan Cozens",
-    "Jake Sanderson",
-    "William Eklund"
+    "Drake Batherson",
+    "Jake Sanderson"
   ],
   "Philadelphia Flyers": [
     "Porter Martone",
@@ -154,7 +154,7 @@
     "Jamie Drysdale"
   ],
   "Pittsburgh Penguins": [
-    "Bryan Rust",
+    "Nicholas Robertson",
     "Tommy Novak",
     "Rickard Rakell",
     "Erik Karlsson",
@@ -182,10 +182,10 @@
     "Mason McTavish"
   ],
   "Tampa Bay Lightning": [
-    "Brandon Hagel",
     "Jake Guentzel",
-    "Nikita Kucherov",
     "Brayden Point",
+    "Nikita Kucherov",
+    "Brandon Hagel",
     "John Carlson"
   ],
   "Toronto Maple Leafs": [
