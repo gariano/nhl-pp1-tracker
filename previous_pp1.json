@@ -1,10 +1,10 @@
 {
   "Anaheim Ducks": [
-    "Beckett Sennecke",
+    "Judd Caulfield",
     "Leo Carlsson",
-    "Mikael Granlund",
+    "Beckett Sennecke",
     "Jackson Lacombe",
-    "Cutter Gauthier"
+    "Mikael Granlund"
   ],
   "Utah Mammoth": [
     "Nick Schmaltz",
@@ -44,8 +44,8 @@
   "Chicago Blackhawks": [
     "Tyler Bertuzzi",
     "Roman Kantserov",
-    "Anton Frondell",
     "Patrick Kane",
+    "Connor Bedard",
     "Bowen Byram"
   ],
   "Colorado Avalanche": [
@@ -85,8 +85,8 @@
   ],
   "Florida Panthers": [
     "Brady Tkachuk",
-    "Sam Bennett",
     "Sam Reinhart",
+    "Carter Verhaeghe",
     "Seth Jones",
     "Matthew Tkachuk"
   ],
@@ -142,16 +142,16 @@
   "Ottawa Senators": [
     "Andre Burakovsky",
     "Dylan Cozens",
-    "Tim Stützle",
     "Drake Batherson",
-    "Thomas Chabot"
+    "Thomas Chabot",
+    "Tim Stützle"
   ],
   "Philadelphia Flyers": [
-    "Porter Martone",
+    "Christian Dvorak",
     "Trevor Zegras",
     "Matvei Michkov",
-    "Tyson Foerster",
-    "David Jiricek"
+    "Owen Tippett",
+    "Jamie Drysdale"
   ],
   "Pittsburgh Penguins": [
     "Ben Kindel",
@@ -161,11 +161,11 @@
     "Sidney Crosby"
   ],
   "San Jose Sharks": [
-    "Will Smith",
+    "Ivar Stenberg",
     "Alexander Wennberg",
-    "Igor Chernyshov",
+    "Will Smith",
     "Luca Cagnoni",
-    "Ivar Stenberg"
+    "Macklin Celebrini"
   ],
   "Seattle Kraken": [
     "Kaapo Kakko",
@@ -182,10 +182,10 @@
     "Adam Jiříček"
   ],
   "Tampa Bay Lightning": [
-    "Brandon Hagel",
     "Jake Guentzel",
-    "Nikita Kucherov",
     "Brayden Point",
+    "Nikita Kucherov",
+    "Brandon Hagel",
     "John Carlson"
   ],
   "Toronto Maple Leafs": [
