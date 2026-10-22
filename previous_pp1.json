@@ -77,11 +77,11 @@
     "Moritz Seider"
   ],
   "Edmonton Oilers": [
-    "Vasily Podkolzin",
     "Zach Hyman",
+    "Ryan Nugent-Hopkins",
     "Leon Draisaitl",
-    "Evan Bouchard",
-    "Connor McDavid"
+    "Connor McDavid",
+    "Evan Bouchard"
   ],
   "Florida Panthers": [
     "Brady Tkachuk",
@@ -105,10 +105,10 @@
     "Matt Boldy"
   ],
   "Montreal Canadiens": [
-    "Juraj Slafkovsky",
-    "Nick Suzuki",
-    "Zack Bolduc",
     "Cole Caufield",
+    "Oliver Kapanen",
+    "Juraj Slafkovsky",
+    "Noah Dobson",
     "Lane Hutson"
   ],
   "Nashville Predators": [
@@ -154,18 +154,18 @@
     "Jamie Drysdale"
   ],
   "Pittsburgh Penguins": [
-    "Bryan Rust",
+    "Ville Koivunen",
     "Tommy Novak",
     "Rickard Rakell",
     "Erik Karlsson",
     "Sidney Crosby"
   ],
   "San Jose Sharks": [
-    "Ivar Stenberg",
     "Mason Marchment",
     "Will Smith",
-    "Dmitry Orlov",
-    "Macklin Celebrini"
+    "Macklin Celebrini",
+    "Ivar Stenberg",
+    "Dmitry Orlov"
   ],
   "Seattle Kraken": [
     "Jordan Eberle",
