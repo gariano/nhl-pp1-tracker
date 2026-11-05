@@ -49,11 +49,11 @@
     "Artyom Levshunov"
   ],
   "Colorado Avalanche": [
-    "Artturi Lehkonen",
-    "Nathan MacKinnon",
     "T.J. Hughes",
-    "Cale Makar",
-    "Martin Necas"
+    "Nazem Kadri",
+    "Martin Necas",
+    "Nathan MacKinnon",
+    "Cale Makar"
   ],
   "Columbus Blue Jackets": [
     "Matthew Knies",
@@ -66,7 +66,7 @@
     "Wyatt Johnston",
     "Roope Hintz",
     "Mikko Rantanen",
-    "Miro Heiskanen",
+    "Thomas Harley",
     "Jason Robertson"
   ],
   "Detroit Red Wings": [
@@ -106,7 +106,7 @@
   ],
   "Montreal Canadiens": [
     "Juraj Slafkovsky",
-    "Alex Newhook",
+    "Nick Suzuki",
     "Zack Bolduc",
     "Cole Caufield",
     "Lane Hutson"
@@ -141,7 +141,7 @@
   ],
   "Ottawa Senators": [
     "Drake Batherson",
-    "Stephen Halliday",
+    "Claude Giroux",
     "Dylan Cozens",
     "Tim Stützle",
     "Jake Sanderson"
@@ -176,8 +176,8 @@
   ],
   "St. Louis Blues": [
     "Jimmy Snuggerud",
-    "Jake Neighbours",
     "Mason McTavish",
+    "Jake Neighbours",
     "Robert Thomas",
     "Philip Broberg"
   ],
@@ -205,7 +205,7 @@
   "Vegas Golden Knights": [
     "Mark Stone",
     "Tomas Hertl",
-    "Trevor Connelly",
+    "Victor Olofsson",
     "Jack Eichel",
     "Mitch Marner"
   ],
