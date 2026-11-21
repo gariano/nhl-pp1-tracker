@@ -1,6 +1,6 @@
 {
   "Anaheim Ducks": [
-    "Beckett Sennecke",
+    "Judd Caulfield",
     "Leo Carlsson",
     "Mikael Granlund",
     "Jackson Lacombe",
@@ -85,10 +85,10 @@
   ],
   "Florida Panthers": [
     "Brady Tkachuk",
-    "Aleksander Barkov",
     "Sam Reinhart",
-    "Seth Jones",
-    "Matthew Tkachuk"
+    "Matthew Tkachuk",
+    "Carter Verhaeghe",
+    "Seth Jones"
   ],
   "Los Angeles Kings": [
     "Kevin Fiala",
@@ -101,7 +101,7 @@
     "Maxim Shabanov",
     "Joel Eriksson Ek",
     "Kirill Kaprizov",
-    "Quinn Hughes",
+    "Brock Faber",
     "Matt Boldy"
   ],
   "Montreal Canadiens": [
@@ -134,8 +134,8 @@
   ],
   "New York Rangers": [
     "Alexis Lafrenière",
-    "Gabriel Perreault",
     "J.T. Miller",
+    "Gabriel Perreault",
     "Mika Zibanejad",
     "Adam Fox"
   ],
@@ -197,7 +197,7 @@
   ],
   "Vancouver Canucks": [
     "Jake DeBrusk",
-    "Elias Pettersson",
+    "Marco Rossi",
     "Brock Boeser",
     "Jonathan Lekkerimaki",
     "Filip Hronek"
