@@ -1,15 +1,15 @@
 {
   "Anaheim Ducks": [
     "Judd Caulfield",
-    "Leo Carlsson",
     "Mikael Granlund",
+    "Troy Terry",
     "Jackson Lacombe",
     "Cutter Gauthier"
   ],
   "Utah Mammoth": [
     "Kailer Yamamoto",
     "Vincent Trocheck",
-    "Barrett Hayton",
+    "Clayton Keller",
     "Mikhail Sergachev",
     "Logan Cooley"
   ],
@@ -91,11 +91,11 @@
     "Matthew Tkachuk"
   ],
   "Los Angeles Kings": [
-    "Kevin Fiala",
+    "Adrian Kempe",
     "Quinton Byfield",
     "Alex Laferriere",
-    "Adrian Kempe",
-    "Erik Gustafsson"
+    "Artemi Panarin",
+    "Brandt Clarke"
   ],
   "Minnesota Wild": [
     "Maxim Shabanov",
@@ -129,7 +129,7 @@
     "Victor Eklund",
     "Bo Horvat",
     "Brayden Schenn",
-    "Matias Maccelli",
+    "Mathew Barzal",
     "Matthew Schaefer"
   ],
   "New York Rangers": [
@@ -212,7 +212,7 @@
   "Washington Capitals": [
     "Tom Wilson",
     "Dylan Strome",
-    "Jordan Kyrou",
+    "Alex Tuch",
     "Alex Ovechkin",
     "Jakob Chychrun"
   ],
