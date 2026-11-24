@@ -78,7 +78,7 @@
   ],
   "Edmonton Oilers": [
     "Kasperi Kapanen",
-    "Vasily Podkolzin",
+    "Ryan Nugent-Hopkins",
     "Leon Draisaitl",
     "Connor McDavid",
     "Evan Bouchard"
@@ -119,7 +119,7 @@
     "Roman Josi"
   ],
   "New Jersey Devils": [
-    "Arseny Gritsyuk",
+    "Jesper Bratt",
     "Nico Hischier",
     "Connor Brown",
     "Jack Hughes",
@@ -127,10 +127,10 @@
   ],
   "New York Islanders": [
     "Victor Eklund",
-    "Bo Horvat",
-    "Brayden Schenn",
     "Mathew Barzal",
-    "Matthew Schaefer"
+    "Brayden Schenn",
+    "Matthew Schaefer",
+    "Bo Horvat"
   ],
   "New York Rangers": [
     "Alexis Lafrenière",
@@ -155,7 +155,7 @@
   ],
   "Pittsburgh Penguins": [
     "Rickard Rakell",
-    "Ben Kindel",
+    "Evgeni Malkin",
     "Tommy Novak",
     "Erik Karlsson",
     "Sidney Crosby"
@@ -211,8 +211,8 @@
   ],
   "Washington Capitals": [
     "Tom Wilson",
+    "Justin Sourdif",
     "Dylan Strome",
-    "Alex Tuch",
     "Alex Ovechkin",
     "Jakob Chychrun"
   ],
